@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MeShop.</title>
+    <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/6644/6644893.png" type = "x-icon/image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class = "whole">
+        <nav class = "nav">
+            <div class = "nav-1">
+                MeShop.
+            </div>
+            <div class = "nav-2">
+                <a href = "#" target = "_self"><span class = "nav-span active">Home</span></a>
+                <a href = "../login/" target = "_self"><span class = "nav-span">Login</span></a>
+                <a href = "../signup/" target = "_self"><span class = "nav-span">Signup</span></a>
+                <a href = "../cart/" target = "_self"><span class = "nav-span">MyCart</span></a>
+                <a href = "../profile/" target = "_self"><span class = "nav-span">Profile</span></a>
+            </div>
+        </nav>
+        <div class = "shop-cont">
+
+            <!--Side bar-->
+            <div class = "left-cont">
+                <!-- color-->
+                <div class = "color-cont">
+                    <h3>Colors</h3>
+                    
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "red" value = "red" class = "checkbox" id = "color-checkbox-1">
+                        <span class = "left-name">Red</span>
+                    </div>
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "blue" value = "blue" class = "checkbox" id = "color-checkbox-2">
+                        <span class = "left-name">Blue</span>
+                    </div>
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "green" value = "green" class = "checkbox" id = "color-checkbox-3">
+                        <span class = "left-name">Green</span>
+                    </div>
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "black" value = "black" class = "checkbox" id = "color-checkbox-4">
+                        <span class = "left-name">Black</span>
+                    </div>
+
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "white" value = "white" class = "checkbox" id = "color-checkbox-5">
+                        <span class = "left-name">White</span>
+                    </div>
+                </div>
+                <hr class = "line">
+
+                <!--Size-->
+                <div class = "size-cont">
+                    <h3>Sizes</h3>
+                    
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "s" value = "s" class = "checkbox" id = "size-checkbox-1">
+                        <span class = "left-name">S</span>
+                    </div>
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "m" value = "m" class = "checkbox" id = "size-checkbox-2">
+                        <span class = "left-name">M</span>
+                    </div>
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "l" value = "l" class = "checkbox" id = "size-checkbox-3">
+                        <span class = "left-name">L</span>
+                    </div>
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "xl" value = "xl" class = "checkbox" id = "size-checkbox-4">
+                        <span class = "left-name">XL</span>
+                    </div>
+                </div>
+                <hr class = "line">
+
+                <!--Rating-->
+                <div class = "rating-cont">
+                    <h3>Rating</h3>
+                    <input type = "range" class = "range-input" value = "1" min = "0" max = "5" id = "rangeInput">
+                    <div class = "range-cont">
+                        <span>0</span>
+                        <span>5</span>
+                    </div>
+                </div>
+                <hr class = "line">
+
+                <!--Price-->
+                <div class = "price-cont">
+                    <h3>Price Range</h3>
+
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "0-25" value = "0-25" class = "checkbox" id = "checkbox-1">
+                        <span class = "left-name">$0 to $25</span>
+                    </div>
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "25-50" value = "25-50" class = "checkbox" id = "checkbox-2">
+                        <span class = "left-name">$25 to $50</span>
+                    </div>
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "50-100" value = "50-100" class = "checkbox" id = "checkbox-3">
+                        <span class = "left-name">$50 to $100</span>
+                    </div>
+                    <div class = "each-options">
+                        <input type = "checkbox" name = "100" value = "100" class = "checkbox" id = "checkbox-4">
+                        <span class = "left-name">$100 onwards</span>
+                    </div>
+                </div>
+                <hr class = "line">
+
+                <!--Filter-->
+
+                <div class = "filter-cont">
+                    <button class = "filter-btn" id = "filter-btn">Apply Filter</button>
+                </div>
+            </div>
+
+
+            <!--All cards-->
+            <div class = "right-cont">
+                <div class = "search-cont">
+                    <span class = "search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type = "search" class = "search-input" placeholder="Search" id = "search-input">
+                </div>
+                
+                <!-- Filter Tabs -->
+                <div class = "filter-tabs-cont">
+                    <button class = "filter-tab tab-selected" id = "all-tab">All</button>
+                    <button class = "filter-tab" id = "mens-tab">Mens</button>
+                    <button class = "filter-tab" id = "women-tab">Womens</button>
+                    <button class = "filter-tab" id = "jewelery-tab">Jewellery</button>
+                    <button class = "filter-tab" id = "electronic-tab">Electronics</button>
+                </div>
+
+                <!-- All Cards -->
+                <div class = "all-cont" id = "all-cards-cont">
+                    
+                    <div class = "mens-clothing-cont" id = "mens-clothing-cont">
+                        <div class = "all-heading" id = "men-heading">Men's Clothing</div>
+                        <div class = "display-cards" id = "display-men-cards">
+
+                        </div>
+                    </div>
+
+                    
+                    <div class = "mens-clothing-cont" id = "womens-clothing-cont">
+                        <span class = "all-heading" id = "women-heading">Women's Clothing</span>
+                        <div class = "display-cards" id = "display-women-cards">
+
+                        </div>
+                    </div>
+
+                    
+                    <div class = "mens-clothing-cont" id = "jewellery-cont">
+                        <span class = "all-heading" id = "jewellery-heading">Jewellery</span>
+                        <div class = "display-cards" id = "display-jewelery-cards">
+
+                        </div>
+                    </div>
+
+                    
+                    <div class = "mens-clothing-cont" id = "electronics-cont">
+                        <span class = "all-heading" id = "electronics-heading">Electronics</span>
+                        <div class = "display-cards" id = "display-electronics-cards">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/6644/6644893.png" type = "x-icon/image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class = "whole">
+        <nav class = "nav">
+            <div class = "nav-1">
+                MeShop.
+            </div>
+            <div class = "nav-2">
+                <a href = "../shop/" target = "_self"><span class = "nav-span">Home</span></a>
+                <a href = "../login/" target = "_self"><span class = "nav-span">Login</span></a>
+                <a href = "../signup/" target = "_self"><span class = "nav-span">Signup</span></a>
+                <a href = "../cart/" target = "_self"><span class = "nav-span">MyCart</span></a>
+                <a href = "#" target = "_self"><span class = "nav-span active">Profile</span></a>
+            </div> 
+        </nav>
+
+
+        <div class = "card-container">
+            <div class = "card">
+                <div>
+                    <h3>Profile</h3>
+                    <span><i class="fa-solid fa-user icon"></i></span>
+                </div>
+
+                <div class = "cont-1">
+                    <span style = "font-size: 20px;">Edit Name :</span>
+                    <input type = "text" id = "first-name" placeholder="First Name" class = "input" required>
+                    <input type = "text" id = "last-name" placeholder="Last Name" class = "input" required>
+                </div>
+
+                <div class="cont-2">
+                    <span style = "font-size: 20px;">Edit Password :</span>
+                    <input type = "password" id = "old-password" placeholder="Old Password" class = "input" readonly>
+                    <input type = "password" id = "new-password" placeholder="Enter New Password" class = "input" required>
+                    <input type = "password" id = "confirm-password" placeholder="Confirm your New Password" class = "input" required>
+                </div>
+
+                <div class = "cont-3">
+                    <button id = "update-btn" class = "update-btn">Update Profile</button>
+                    <button id = "log-out-btn" class = "log-out">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="script.js"></script>
+  </body>
+</html>

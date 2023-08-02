@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login </title>
+    <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/6644/6644893.png" type = "x-icon/image">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class = "whole">
+      <nav class = "nav">
+          <div class = "nav-1">
+              MeShop.
+          </div>
+          <div class = "nav-2">
+              <a href = "../shop/" target = "_self"><span class = "nav-span">Home</span></a>
+              <a href = "#" target = "_self"><span class = "nav-span active">Login</span></a>
+              <a href = "../signup/" target = "_self"><span class = "nav-span">Signup</span></a>
+              <a href = "../cart/" target = "_self"><span class = "nav-span">MyCart</span></a>
+              <a href = "../profile/" target = "_self"><span class = "nav-span">Profile</span></a>
+          </div> 
+      </nav>
+
+      <div class = "card-cont">
+        <div class = "card">
+          <h3>Login</h3>
+          <div style = "margin-top: 8%; width: 100%;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+            <div style="width: 100%;text-align: start; margin-left: 15%; margin-top: 10px; color: aliceblue;">
+              <label for = "email">Email :</label><br>
+              <input type = "email" class="input" id = "email" placeholder="Email">
+            </div>
+
+            <div style="width: 100%;text-align: start; margin-left: 15%; margin-top: 10px; color: aliceblue">
+              <label for = "password">Password :</label><br>
+              <input type = "password" class="input" id = "password" placeholder="Password">
+            </div>
+            
+            
+          </div>
+
+          <div style = "width: 100%; text-align: center;">
+            <button id = "login" class = "login-btn">LogIn</button>
+          </div>
+            
+          <p id = "error-msg" class = "error-msg">All fields are mandatory.</p>
+        </div>
+      </div>
+
+      
+    </div>
+
+	<script src="script.js"></script>
+  </body>
+</html>

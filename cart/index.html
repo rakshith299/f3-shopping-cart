@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/6644/6644893.png" type = "x-icon/image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class = "whole">
+        <nav class = "nav">
+            <div class = "nav-1">
+                MeShop.
+            </div>
+            <div class = "nav-2">
+                <a href = "../shop/" target = "_self"><span class = "nav-span">Home</span></a>
+                <a href = "../login/" target = "_self"><span class = "nav-span">Login</span></a>
+                <a href = "../signup/" target = "_self"><span class = "nav-span">Signup</span></a>
+                <a href = "#" target = "_blank"><span class = "nav-span active">MyCart</span></a>
+                <a href = "../profile/" target = "_self"><span class = "nav-span">Profile</span></a>
+            </div> 
+        </nav>
+
+        <div class = "container">
+          <div class = "cart-icon-cont">
+            <h2> My Cart</h2>
+            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+          </div>
+          
+
+          <div class = "error-msg-cont" id = "error-msg-cont">
+            <span>Sorry! Your cart is empty...</span>
+            <img src = "https://cliply.co/wp-content/uploads/2021/03/392103390_SAD_EMOJI_400px.gif" width = "40px" height = "40px">
+          </div>
+
+          <div class = "items-and-checkout-container"> 
+            
+            <div class = "items-cont" id = "items-cont">
+              
+            </div>
+
+            <div class = "checkout-cont" id = "checkout-cont">
+
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+	<script src="script.js"></script>
+  </body>
+</html>

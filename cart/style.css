@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+.whole{
+    width: 100%;
+    height: 76vh;
+}
+
+.nav{
+    background-color: black;
+    height: 10%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.nav-1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nav-2 a{
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.nav-span{
+    color: #B2B2B2;
+}
+
+.active{
+    color: lightskyblue;
+}
+
+h2{
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.container{
+    width: 100%;
+    height: 91vh;
+    margin-top: 4%;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.items-and-checkout-container{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-cont{
+    width: 70%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.checkout-cont{
+
+    width: 30%;
+    height: 100%;
+    overflow-y: auto;
+    margin-left: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.error-msg-cont{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 30%;
+
+}
+
+.cart-icon-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+
+.cart-icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+
+/* Cart Items */
+
+
+.all-cont{
+
+    width: 100%;
+    height: 86%;
+    margin-top: 10px;
+    overflow-y: auto;
+    
+}
+
+.all-heading{
+    font-size: 20px;
+}
+
+.mens-clothing-cont{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.rate-size-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.colour-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.round-colors-cont{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.display-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+
+
+
+
+.info-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    width: 100%;
+    height: 42%;
+
+
+}
+
+.img{
+    width: 80%;
+    height: 100%;
+}
+
+.img-div{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+.add-btn{
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+
+}
+
+.add-btn:active{
+    transform: translateY(4px);
+    width: 98%;
+    height: 32px;
+}
+
+.star{
+    width: 15px;
+    height: 15px;
+    color: gold;
+}
+
+.card{
+    width: 30%;
+    height: 490px;
+    border: 1px solid black;
+    margin-right: 21px;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.black{
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.red{
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.blue{
+    background-color: blue;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.green{
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.white{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.star-bg{
+    background-color: yellow;
+}
+
+.display-none{
+    display: none;
+}
+
+
+/* Total */ 
+
+.total-cont{
+    border: 1px solid white;
+    width: 80%;
+    overflow-y: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.ol{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.li{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.total-amt-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    color: aquamarine;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.payment-btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 12px;
+    background-color: #B2B2B2;
+    color: black;
+    margin-right: 10px;
+    transition-duration: 0.4s;
+}
+
+.payment-btn:active{
+    width: 145px;
+    height: 35px;
+    transform: translateY(4px);
+}
+
+.checkout-btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    border: 1px solid white;
+    transition-duration: 0.4s;
+}
+
+.checkout-btn:active{
+    transform: translateY(4px);
+    width: 145px;
+    height: 35px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up</title>
+    <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/6644/6644893.png" type = "x-icon/image">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class = "whole">
+        <nav class = "nav">
+            <div class = "nav-1">
+                MeShop.
+            </div>
+            <div class = "nav-2">
+                <a href = "../shop/" target = "_self"><span class = "nav-span">Home</span></a>
+                <a href = "../login/" target = "_self"><span class = "nav-span">Login</span></a>
+                <a href = "#" target = "_self"><span class = "nav-span active">Signup</span></a>
+                <a href = "../cart/" target = "_self"><span class = "nav-span">MyCart</span></a>
+                <a href = "../profile/" target = "_self"><span class = "nav-span">Profile</span></a>
+            </div>
+        </nav>
+
+        <div class = "card-cont">
+            <div class = "card">
+
+                <h3>Sign up</h3>
+
+                <form style = "width: 100%; text-align: center;" id = "form">
+                    <div style="width: 100%;">
+                        <input type = "text" id = "first-name" class = "input" placeholder = "First Name" required>
+                    </div>
+        
+                    <div style="width: 100%;">
+                        <input type = "text" id = "last-name" class = "input" placeholder = "Last Name" required>
+                    </div>
+        
+                    <div style="width: 100%;">
+                        <input type = "email" id = "email" class = "input" placeholder = "Email" required>
+                    </div>
+        
+                    <div style="width: 100%;">
+                        <input type = "password" id = "password" class = "input" placeholder = "Password"  required>
+                    </div>
+        
+                    <div style="width: 100%;">
+                        <input type = "password" id = "confirm-password" class = "input" placeholder = "Confirm Password" required>
+                    </div>
+        
+                    <div style = "width: 100%;text-align: center;">
+                        <button class = "sign-up-btn">Sign Up</button>
+                    </div>
+                </form>
+
+                <p class = "error-msg" id = "error-msg"> All fields are mandatory to fill.</p>
+            </div>
+        </div>
+
+       
+
+    </div>
+	<script src="script.js"></script>
+  </body>
+</html>

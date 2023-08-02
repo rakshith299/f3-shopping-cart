@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+.whole{
+    width: 100%;
+    height: 76vh;
+}
+
+.nav{
+    background-color: black;
+    height: 10%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.nav-1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nav-2 a{
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.nav-span{
+    color: #B2B2B2;
+}
+
+.card-cont{
+    border: 1px solid black;
+    height: 92vh;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("../supports/bruno-kelzer-LvySG1hvuzI-unsplash.jpg");
+    background-size: cover;
+
+}
+
+.card{
+    border: 1px solid black;
+    width: 30%;
+    height: 62%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4%;
+    border-radius: 15px;
+}
+
+
+h3{
+    margin-top: 7%;
+    font-size: 30px;
+    color: white;
+}
+
+.input{
+    width: 80%;
+    margin-top: 15px;
+    height: 35px;
+    padding: 5px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+    color: white;
+
+
+}
+
+input:focus{
+    border: 1px solid lawngreen;
+}
+
+.login-btn{
+    width: 150px;
+    height: 38px;
+    background-color: aliceblue;
+    color: black;
+    margin-top: 9%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.login-btn:active{
+    width: 145px;
+    height: 32px;
+    transform: translateY(5px);
+}
+
+.error-msg{
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.active{
+    color: lightskyblue;
+}
