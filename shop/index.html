@@ -8,12 +8,16 @@
     <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/6644/6644893.png" type = "x-icon/image">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   </head>
   <body>
     <div class = "whole">
         <nav class = "nav">
             <div class = "nav-1">
-                MeShop.
+                <span class="company-name">MeShop.</span>
+                <span class="material-symbols-outlined hamburger" onclick = "opensidebar()" id = "hamburger">
+                    menu
+                </span>
             </div>
             <div class = "nav-2">
                 <a href = "#" target = "_self"><span class = "nav-span active">Home</span></a>
@@ -26,7 +30,7 @@
         <div class = "shop-cont">
 
             <!--Side bar-->
-            <div class = "left-cont">
+            <div class = "left-cont" id = "left-cont">
                 <!-- color-->
                 <div class = "color-cont">
                     <h3>Colors</h3>
@@ -121,7 +125,7 @@
 
 
             <!--All cards-->
-            <div class = "right-cont">
+            <div class = "right-cont" id = "right-cont">
                 <div class = "search-cont">
                     <span class = "search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
                     <input type = "search" class = "search-input" placeholder="Search" id = "search-input">

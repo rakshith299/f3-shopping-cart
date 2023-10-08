@@ -41,6 +41,25 @@
     color: #B2B2B2;
 }
 
+@media screen and (min-width: 10px) and (max-width: 768px) {
+    .company-name{
+        display: none;
+    }
+
+    .nav-span{
+        font-size: 14px;
+
+    }
+}
+
+.home-cont{
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 .login-signup-opt-cont{
     height: 25%;
     margin-top: 20px;
@@ -49,7 +68,7 @@
     justify-content: space-evenly;
     align-items: flex-start;
     padding-left: 30px;
-    margin-top: 10%;
+    margin-top: 120px;
     margin-bottom: 30px;
 }
 
@@ -61,6 +80,16 @@
 .span-2{
     font-size: 18px;
     font-weight: 500;
+}
+
+@media screen and (min-width: 10px) and (max-width: 768px) {
+    .span-1{
+        font-size: 35px;
+    }
+
+    .span-2{
+        font-size: 14px;
+    }
 }
 
 .login-btn{
@@ -120,4 +149,25 @@
 
 .active{
     color: lightskyblue;
+}
+
+.btn-container{
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 10px) and (max-width: 768px) {
+    .login-signup-opt-cont{
+        align-items: center;
+        width: 100%;
+    }
+
+    .img-cont{
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger{
+        display: none !important; 
+    }
 }

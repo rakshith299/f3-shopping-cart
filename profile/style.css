@@ -154,3 +154,42 @@ h3{
     color:lightskyblue;
 }
 
+@media screen and (min-width: 10px) and (max-width: 768px) {
+    .company-name{
+        display: none;
+    }
+
+    .nav-span{
+        font-size: 14px;
+ 
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .company-name{
+        display: block;
+    }
+
+    .nav-span{
+        font-size: 14px;
+ 
+    }
+
+    .card{
+        width: 50%;
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger{
+        display: none !important; 
+    }
+}

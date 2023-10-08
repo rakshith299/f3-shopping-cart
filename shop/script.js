@@ -260,6 +260,19 @@ electronicsTabEle.addEventListener("click", function(){
 //on apply filter button
 
 filterBtnEle.addEventListener("click", function(){
+
+    document.getElementById("left-cont").classList.remove("left-cont-full");
+    document.getElementById("right-cont").classList.remove("display-none-right-cont");
+
+    document.getElementById("left-cont").style.display = "none";
+    document.getElementById("right-cont").style.display = "block";
+    document.getElementById("right-cont").style.width = "100%";
+
+
+
+
+
+
     let specifiedRating = rangeInputEle.value;
 
     // for prices
@@ -709,7 +722,7 @@ function makeCards(eachCard){
 
     let titleEle = document.createElement("h3");
 
-    title = title.substring(0, 40);
+    title = title.substring(0, 30);
     titleEle.innerText = title + `...`;
 
     infoCont.appendChild(titleEle);
@@ -764,6 +777,67 @@ function addingColorAndSize(dataArr){
         
         productsArr.push(each);
     })
+}
+
+/* open side bar onclick */
+
+window.addEventListener("resize", function(){
+
+    if(window.innerWidth > 768 && window.innerWidth < 1000){
+
+
+
+        document.getElementById("left-cont").style.display = "block";
+        document.getElementById("left-cont").style.width = "28%";
+        document.getElementById("left-cont").style.backgroundColor = "black";
+        document.getElementById("left-cont").style.color = "white";
+        document.getElementById("left-cont").style.height = "100%";
+        document.getElementById("left-cont").style.padding = "15px";
+        document.getElementById("left-cont").style.overflowY = "auto";
+    
+        document.getElementById("right-cont").style.display = "inline";
+        document.getElementById("right-cont").style.width = "72%";
+    }else if(window.innerWidth > 1000){
+
+        document.getElementById("left-cont").style.display = "block";
+        document.getElementById("left-cont").style.width = "20%";
+        document.getElementById("left-cont").style.backgroundColor = "black";
+        document.getElementById("left-cont").style.color = "white";
+        document.getElementById("left-cont").style.height = "100%";
+        document.getElementById("left-cont").style.padding = "15px";
+        document.getElementById("left-cont").style.overflowY = "auto";
+    
+        document.getElementById("right-cont").style.display = "inline";
+        document.getElementById("right-cont").style.width = "80%";
+
+
+    }else{
+
+        document.getElementById("left-cont").style.display = "none";
+        document.getElementById("right-cont").style.display = "block";
+        document.getElementById("right-cont").style.width = "100%";
+
+        document.getElementById("all-cards-cont").style.marginTop = "50px";
+    }
+    
+})
+
+
+function opensidebar(){
+
+    if(window.innerWidth < 768){
+
+        document.getElementById("left-cont").style.display = "block";
+        document.getElementById("left-cont").style.width = "100%";
+        document.getElementById("left-cont").style.backgroundColor = "black";
+        document.getElementById("left-cont").style.color = "white";
+        document.getElementById("left-cont").style.height = "100%";
+        document.getElementById("left-cont").style.padding = "15px";
+        document.getElementById("left-cont").style.overflowY = "auto";
+    
+        document.getElementById("right-cont").style.display = "none";
+    }
+
 }
 
 
